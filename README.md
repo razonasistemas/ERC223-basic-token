@@ -2,9 +2,9 @@
 
 ERC223 is a modification of the ERC20 token standard. It is backwards compatible with ERC20 tokens. This means that ERC223 supports every ERC20 functional and contracts or services working with ERC20 tokens will work with ERC223 tokens correctly.
 
-Please read the definition of the standard here : https://github.com/Dexaran/ERC223-token-standard
+Please read the definition of the standard here : https://github.com/Dexaran/ERC223-token-standard. Alos watch this explicative video : https://www.youtube.com/watch?v=GS62VNyPVHs
 
-### The main goals of developing ERC223 token standard is:
+### The main goal of developing ERC223 token standard is:
    Accidentally lost tokens inside contracts: there are two different ways to transfer ERC20 tokens depending on: 1) is the receiver address a contract, or 2) a wallet address. You should call `transfer` to send tokens to a wallet address or call `approve` on token contract then `transferFrom` on receiver contract to send tokens to contract. Accidentally, a call of `transfer` function to a contract address will cause a loss of tokens inside receiver contract where tokens will never be accessibe.
 
   This is not a minor issue because af you could see in the following links, some ICOs has lost tokens for thousands of USD. There are no way to recover that funds.
